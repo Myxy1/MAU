@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/hatter3"
+    >
+
+    <TextView
+        android:text="WELCOME"
+        android:textStyle="bold"
+        android:textColor="#eaf1ec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/welcome" />
+
+
+
+
+
+    <TextView
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/name2" />
+
+    <Button
+        android:text="New Game"
+        android:textColor="#f8f7f7"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="0dp"
+        android:background="@drawable/mybutton"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:onClick="start"
+        />
+
+
+    <Button
+        android:text="Continue"
+        android:textColor="#f8f7f7"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+
+    <Button
+        android:text="Credits"
+        android:textColor="#f8f7f7"
+        android:layout_width="match_parent"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="21dp"
+        android:onClick="credits"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+
+    <Button
+        android:text="Options"
+        android:textColor="#ec2626"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:textSize="25dp"
+        android:background="@drawable/mybutton"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+
+
+</RelativeLayout>
