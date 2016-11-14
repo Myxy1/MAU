@@ -182,10 +182,11 @@ public class Game extends AppCompatActivity {
                     if (flag<questions.length)
                     {
                         tv.setText(questions[flag]);
-                        rb1.setText(opt[flag*4]);   rb1.setChecked(false);
-                        rb2.setText(opt[(flag*4)+1]);   rb2.setChecked(false);
-                        rb3.setText(opt[(flag*4)+2]);   rb3.setChecked(false);
-                        rb4.setText(opt[(flag*4)+3]);   rb4.setChecked(false);
+                        rg.clearCheck();
+                        rb1.setText(opt[flag*4]);
+                        rb2.setText(opt[(flag*4)+1]);
+                        rb3.setText(opt[(flag*4)+2]);
+                        rb4.setText(opt[(flag*4)+3]);
                         question.setText("(" + kerdesek + "/" + questions.length + ")");
                     }
                     else
