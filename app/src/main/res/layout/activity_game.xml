@@ -128,6 +128,7 @@
         android:layout_marginTop="52dp"
         android:background="@drawable/edit_text"
         android:id="@+id/radioGroup"
+        android:layout_marginRight="24dp"
         android:layout_below="@+id/textView1"
         android:layout_toLeftOf="@+id/kategoria"
         android:layout_toStartOf="@+id/kategoria">
@@ -168,6 +169,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="12dp"
         android:layout_marginEnd="12dp"
+        tools:layout_width="50dp"
+        tools:layout_height="100dp"
         android:id="@+id/kategoria" />
 
 

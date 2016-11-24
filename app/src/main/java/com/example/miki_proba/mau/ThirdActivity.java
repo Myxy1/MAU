@@ -1,6 +1,7 @@
 package com.example.miki_proba.mau;
 
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -30,7 +32,7 @@ public class ThirdActivity extends AppCompatActivity {
         name2 = (TextView) findViewById(R.id.name2);
 
         SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-        name = sharedPreferences.getString("name","N/A");
+        name = sharedPreferences.getString("name","");
 
         name2.setText(name);
         Log.d("LOG_third","Create");
@@ -40,7 +42,7 @@ public class ThirdActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void credits(View view){
+    public void credits2(View view){
         AlertDialog.Builder alert1 = new AlertDialog.Builder(this);
         alert1.setMessage("Developers:\n\tMerényi Miklós\n\tPuskás Dávid"+"\nInventor:\n\tMiguel Rodrigues")
                 .setPositiveButton("Close", new DialogInterface.OnClickListener(){
@@ -53,6 +55,11 @@ public class ThirdActivity extends AppCompatActivity {
                 .setIcon(R.drawable.icon1)
                 .create();
         alert1.show();
+    }
+    public void credits(View view){
+        Dialog dialog = new Dialog(ThirdActivity.this, R.style.FullHeightDialog);
+        dialog.setContentView(R.layout.credits);
+        dialog.show();
     }
 
 

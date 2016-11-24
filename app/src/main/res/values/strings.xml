@@ -71,4 +71,40 @@
             <item>with the help of a pin and with plumb</item>
             <item>trying to keep the same moments of the rotation</item>
         </string-array>
+    <string name="school1">\nDenmark School
+        <a href="www.petrik.hu" target="_top">www.denmarkschool.com</a>\n
+    </string>
+    <string name="school2">\nGreec School
+        <a href="www.petrik.hu" target="_top">www.greecschool.com</a>\n
+    </string>
+    <string name="school3">\nPetrik Lajos Két Tanítási Nyelvű Vegyipari, Környezetvédelmi és Informatikai Szakgimnázium
+        <a href="www.petrik.hu" target="_top">www.petrik.hu</a>\n
+    </string>
+    <string name="school4">\nItalian School
+        <a href="www.petrik.hu" target="_top">www.italianschool.com</a>\n
+    </string>
+    <string name="school5">\nLitvania School
+        <a href="www.petrik.hu" target="_top">www.litvaniaschool.com</a>\n
+    </string>
+    <string name="school6">\nPoland School
+        <a href="www.petrik.hu" target="_top">www.polandschool.com</a>\n
+    </string>
+    <string name="school7">\nPortugal School
+        <a href="www.petrik.hu" target="_top">www.portugalschool.com</a>\n
+    </string>
+    <string name="school8">\nRomania School
+        <a href="www.petrik.hu" target="_top">www.romaniaschool.com</a>\n
+    </string>
+    <string name="developers">
+        \nDevelopers:\n
+                Merényi Miklós\n
+                Puskás Dávid"
+    </string>
+    <string name="inventor">
+        \nInventor:\n
+            Miguel Rodrigues\n
+    </string>
+    <string name="school">
+        \nSchools:\n
+    </string>
 </resources>

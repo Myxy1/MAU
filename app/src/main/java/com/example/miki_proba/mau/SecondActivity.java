@@ -24,6 +24,7 @@ public class SecondActivity extends AppCompatActivity {
     private Button button1;
     private Boolean exit = false;
     private MediaPlayer mp1,mp2;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +35,9 @@ public class SecondActivity extends AppCompatActivity {
         button1 = (Button) findViewById(R.id.button1);
 
 
-            mp1 = MediaPlayer.create(this,R.raw.wrong);
+        mp1 = MediaPlayer.create(this,R.raw.wrong);
         mp2 = MediaPlayer.create(this,R.raw.correct);
+
 
         Log.d("LOG_second","Create");
     }
