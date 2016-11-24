@@ -139,6 +139,7 @@ public class Game extends AppCompatActivity {
             public void onClick(View view) {
                 if (rb1.isChecked()==true || rb2.isChecked()==true || rb3.isChecked()==true || rb4.isChecked()==true)
                 {
+
                     topic();
                     Intent towin = new Intent(Game.this,Win.class);
                     Intent tolose = new Intent(Game.this,Lose.class);
@@ -182,11 +183,12 @@ public class Game extends AppCompatActivity {
                     if (flag<questions.length)
                     {
                         tv.setText(questions[flag]);
-                        rb1.setText(opt[flag*4]);   rb1.setChecked(false);
-                        rb2.setText(opt[(flag*4)+1]);   rb2.setChecked(false);
-                        rb3.setText(opt[(flag*4)+2]);   rb3.setChecked(false);
-                        rb4.setText(opt[(flag*4)+3]);   rb4.setChecked(false);
+                        rb1.setText(opt[flag*4]);        rb1.setFocusable(false);
+                        rb2.setText(opt[(flag*4)+1]);    rb2.setFocusable(false);
+                        rb3.setText(opt[(flag*4)+2]);    rb3.setFocusable(false);
+                        rb4.setText(opt[(flag*4)+3]);    rb4.setFocusable(false);
                         question.setText("(" + kerdesek + "/" + questions.length + ")");
+
                     }
                     else
                     {

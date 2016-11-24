@@ -123,14 +123,14 @@
         android:layout_centerHorizontal="true" />
 
     <RadioGroup
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:background="@drawable/edit_text"
         android:id="@+id/radioGroup"
         android:layout_below="@+id/textView1"
-        android:layout_toLeftOf="@+id/textView4"
-        android:layout_toStartOf="@+id/textView4">
+        android:layout_toLeftOf="@+id/kategoria"
+        android:layout_toStartOf="@+id/kategoria">
 
         <RadioButton
             android:layout_width="fill_parent"
