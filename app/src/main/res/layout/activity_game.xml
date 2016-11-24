@@ -122,22 +122,35 @@
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        tools:layout_width="50dp"
+        tools:layout_height="100dp"
+        android:id="@+id/kategoria" />
+
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="51dp"
         android:background="@drawable/edit_text"
         android:id="@+id/radioGroup"
-        android:layout_marginRight="24dp"
         android:layout_below="@+id/textView1"
-        android:layout_toLeftOf="@+id/kategoria"
-        android:layout_toStartOf="@+id/kategoria">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <RadioButton
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/radio0"
-            android:text="RadioButton"/>
+            android:text="RadioButton"
+            android:buttonTint="@color/colorPrimary"
+            />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -160,18 +173,6 @@
 
 
     </RadioGroup>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="12dp"
-        android:layout_marginEnd="12dp"
-        tools:layout_width="50dp"
-        tools:layout_height="100dp"
-        android:id="@+id/kategoria" />
 
 
 </RelativeLayout>
