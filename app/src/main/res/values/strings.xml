@@ -71,29 +71,29 @@
             <item>with the help of a pin and with plumb</item>
             <item>trying to keep the same moments of the rotation</item>
         </string-array>
-    <string name="school1">\nDenmark School
-        <a href="www.petrik.hu" target="_top">www.denmarkschool.com</a>\n
+    <string name="school1">\nBorupgaard Gymnasium
+        <a href="www.borupgaard-gym.dk" target="_top">www.borupgaard-gym.dk</a>\n
     </string>
-    <string name="school2">\nGreec School
-        <a href="www.petrik.hu" target="_top">www.greecschool.com</a>\n
+    <string name="school2">\nΓΕΝΙΚΟ ΛΥΚΕΙΟ ΑΓΡΙΑΣ
+        <a href="www.lykeioagrias.blogspot.hu" target="_top">www.lykeioagrias.blogspot.hu</a>\n
     </string>
     <string name="school3">\nPetrik Lajos Két Tanítási Nyelvű Vegyipari, Környezetvédelmi és Informatikai Szakgimnázium
         <a href="www.petrik.hu" target="_top">www.petrik.hu</a>\n
     </string>
-    <string name="school4">\nItalian School
-        <a href="www.petrik.hu" target="_top">www.italianschool.com</a>\n
+    <string name="school4">\nScuole Liceo Scientifico Statale B. Rosetti
+        <a href="www.liceorosetti.gov.it" target="_top">www.liceorosetti.gov.it</a>\n
     </string>
-    <string name="school5">\nLitvania School
-        <a href="www.petrik.hu" target="_top">www.litvaniaschool.com</a>\n
+    <string name="school5">\nUtenos Dauniškio gimnazija
+        <a href="www.dauniskis.utena.lm.lt" target="_top">www.dauniskis.utena.lm.lt</a>\n
     </string>
-    <string name="school6">\nPoland School
-        <a href="www.petrik.hu" target="_top">www.polandschool.com</a>\n
+    <string name="school6">\nZespół Szkół w Głogowie Małopolskim
+        <a href="www.zs.glogow-mlp.pl" target="_top">www.zs.glogow-mlp.pl</a>\n
     </string>
-    <string name="school7">\nPortugal School
-        <a href="www.petrik.hu" target="_top">www.portugalschool.com</a>\n
+    <string name="school7">\nAgrupamento de Escolas Anselmo de Andrade
+        <a href="www.anselmodeandrade.pt" target="_top">www.anselmodeandrade.pt</a>\n
     </string>
-    <string name="school8">\nRomania School
-        <a href="www.petrik.hu" target="_top">www.romaniaschool.com</a>\n
+    <string name="school8">\nColegiul Tehnic Ana Aslan
+        <a href="www.colegiulaslancluj.ro" target="_top">www.colegiulaslancluj.ro</a>\n
     </string>
     <string name="developers">
         \nDevelopers:\n
