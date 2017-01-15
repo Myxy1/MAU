@@ -2,12 +2,7 @@
     <string name="app_name">MAU</string>
     
         <string-array name="questions">     //kérdések
-            <item>Julian already have one apple and bought two. How many apple he has?</item>
-            <item>How much 5 + 5 ?</item>
-            <item>How many questions do you already answered?</item>
-            <item>How much 5 * 295 / 6 ?</item>
-            <item>How much 294871 - 5123 ?</item>
-            <item>What is the height of a giraffe?(m)</item>
+            <item>What kind of gases are emitted  at the complete combustion of hydrocarbons?</item>
             <item>Given: the triangle ABC with vertices A=(-1, 0), B=(1, -1) and C=(1, 2). The centre of gravity of this triangle is the point of coordinates:</item>
             <item>Is the 528th element of Fibonacci sequence an even number?</item>
             <item>How do we determine the centre of gravity of a body with a irregular shape?</item>
@@ -16,30 +11,10 @@
     
     
         <string-array name="opt">       //lehetőségek
-            <item>2</item>
-            <item>5</item>
-            <item>6</item>
-            <item>3</item>
-                <item>10</item>
-                <item>20</item>
-                <item>30</item>
-                <item>40</item>
-                    <item>1</item>
-                    <item>2</item>
-                    <item>3</item>
-                    <item>4</item>
-                        <item>124</item>
-                        <item>20</item>
-                        <item>245</item>
-                        <item>9091</item>
-                            <item>223448</item>
-                            <item>289748</item>
-                            <item>222748</item>
-                            <item>289438</item>
-                                <item>100</item>
-                                <item>50</item>
-                                <item>5</item>
-                                <item>10</item>
+            <item>CO2 and H2O</item>
+            <item>CO and H2O</item>
+            <item>H2 and H2O</item>
+            <item>NO and H2O</item>
                             <item>S=(1/3 , 2/3)</item>
                             <item>S=(1/3 , 1/3)</item>
                             <item>S=(2/3 , 2/3)</item>
@@ -60,17 +35,15 @@
     
     
         <string-array name="ans">       //jó válaszok
-            <item>3</item>
-            <item>10</item>
-            <item>3</item>
-            <item>245</item>
-            <item>289748</item>
-            <item>5</item>
+            <item>CO2 and H2O</item>
             <item>S=(2/3 , 2/3)</item>
             <item>Yes</item>
             <item>with the help of a pin and with plumb</item>
             <item>trying to keep the same moments of the rotation</item>
         </string-array>
+
+
+
     <string name="school1">\nBorupgaard Gymnasium
         <a href="www.borupgaard-gym.dk" target="_top">www.borupgaard-gym.dk</a>\n
     </string>
@@ -95,16 +68,38 @@
     <string name="school8">\nColegiul Tehnic Ana Aslan
         <a href="www.colegiulaslancluj.ro" target="_top">www.colegiulaslancluj.ro</a>\n
     </string>
+
+
     <string name="developers">
         \nDevelopers:\n
                 Merényi Miklós\n
                 Puskás Dávid"
     </string>
+
+
     <string name="inventor">
         \nInventor:\n
             Miguel Rodrigues\n
     </string>
+
+
     <string name="school">
         \nSchools:\n
     </string>
+
+
+    <string name="newgame">New Game</string>
+    <string name="continuee">Continue</string>
+    <string name="credits">Credits</string>
+    <string name="options">Options</string>
+
+    <string-array name="items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+    </string-array>
+
+
 </resources>

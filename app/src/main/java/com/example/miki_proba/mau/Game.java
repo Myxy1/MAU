@@ -39,32 +39,8 @@ public class Game extends AppCompatActivity {
     private ImageView kategoria;
 
     private String topics[]={"Art","Geography","Maths","Music","Enviroment","Architecture","Astronomy","Informatics"};
-    /*
-    private String questions[]={"Julian already have one apple and bought two. How many apple he has?",     //első kérdés
-                                "How much 5 + 5 ?",                                                         //második kérdés
-                                "How many questions do you already answered?",                              //harmadik kérdés
-                                "How much 5 * 295 / 6 ?",                                                   //negyedik kérdés
-                                "How much 294871 - 5123 ?",                                                  //ötödik kérdés
-                                "What is the height of a giraffe?(m)",                                      //hatodik kérdés
-                                "Given: the triangle ABC with vertices A=(-1, 0), B=(1, -1) and C=(1, 2). The centre of gravity of this triangle is the point of coordinates:",
-                                "Is the 528th element of Fibonacci sequence an even number? ",
-                                "How do we determine the centre of gravity of a body with a irregular shape?",
-                                "How do you explain that the candle swings while it burns?"};
-
-    private String ans[]={"3","10","3","245","289748","5","S=(2/3 , 2/3)","Yes","with the help of a pin and with plumb","trying to keep the same moments of the rotation"};
 
 
-    private String opt[]={"2","5","6","3",      //első válasz lehetőségek
-                                    "10","20","30","40",  //második válasz lehetőségek
-                                    "1","2","3","4",   //harmadik válasz lehetőségek
-                                    "124","20","245","9091",    //negyedik válasz lehetőségek
-                                    "223448","289748","222748","289438",       //ötödik válasz lehetőségek
-                                    "100","50","5","10",       //hatodik válasz lehetőségek
-                                    "S=(1/3 , 2/3)","S=(1/3 , 1/3)","S=(2/3 , 2/3)","S=(2/3 , 1/3)",
-                                    "Yes","No","Yes","No",
-                                    "with the help of a pin and with plumb","with the spirit -level","with the ruler","all answer is correct",
-                                    "trying to find the balance","trying to keep the same moments of the rotation","trying to find the center of the gravity","all answer is correct"};
-    */
 
     private String questions[];
     private String ans[];
@@ -123,6 +99,7 @@ public class Game extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which){
                                 Intent tomenu = new Intent(Game.this,ThirdActivity.class);
                                 startActivity(tomenu);
+                                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                             }
                         })
                         .setNegativeButton("No", null)
@@ -141,6 +118,7 @@ public class Game extends AppCompatActivity {
                 {
                     topic();
                     Intent towin = new Intent(Game.this,Win.class);
+
                     Intent tolose = new Intent(Game.this,Lose.class);
                     RadioButton uans =(RadioButton)findViewById(rg.getCheckedRadioButtonId());
                     String ansText="";
@@ -177,6 +155,7 @@ public class Game extends AppCompatActivity {
                             break;
                         case 0:
                             startActivity(tolose);
+                            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                             break;
                     }
                     if (flag<questions.length)
@@ -192,6 +171,7 @@ public class Game extends AppCompatActivity {
                     else
                     {
                         startActivity(towin);
+                        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     }
                 }else{
                     Toast.makeText(Game.this, "Please check answer(s)", Toast.LENGTH_SHORT).show();
@@ -255,6 +235,7 @@ public class Game extends AppCompatActivity {
             intent.addCategory(Intent.CATEGORY_HOME);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         } else {
             Toast.makeText(this, "Press Back again to Exit.",

@@ -33,7 +33,30 @@ public class SecondActivity extends AppCompatActivity {
 
         name1 = (EditText) findViewById(R.id.name1);
         button1 = (Button) findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (name1.getText().length() == 0){
+                    Toast.makeText(SecondActivity.this, "Please write your name", Toast.LENGTH_SHORT).show();
+                    mp1.setLooping(false);
+                    mp1.start();
 
+                }else
+                {
+                    mp2.setLooping(false);
+                    mp2.start();
+
+                    SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor=sharedPreferences.edit();
+                    editor.putString("name", name1.getText().toString());
+                    editor.commit();
+
+                    Intent tothird = new Intent(SecondActivity.this, ThirdActivity.class);
+                    startActivity(tothird);
+                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                }
+            }
+        });
 
         mp1 = MediaPlayer.create(this,R.raw.wrong);
         mp2 = MediaPlayer.create(this,R.raw.correct);
@@ -52,6 +75,7 @@ public class SecondActivity extends AppCompatActivity {
             intent.addCategory(Intent.CATEGORY_HOME);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
         } else {
             Toast.makeText(this, "Press Back again to Exit.",
@@ -66,27 +90,6 @@ public class SecondActivity extends AppCompatActivity {
 
         }
 
-    }
-
-    public void nextthird(View view){
-        if (name1.getText().length() == 0){
-            Toast.makeText(this, "Please write your name", Toast.LENGTH_SHORT).show();
-            mp1.setLooping(false);
-            mp1.start();
-
-        }else
-        {
-            mp2.setLooping(false);
-            mp2.start();
-
-            SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor=sharedPreferences.edit();
-            editor.putString("name", name1.getText().toString());
-            editor.commit();
-
-            Intent tothird = new Intent(SecondActivity.this, ThirdActivity.class);
-            startActivity(tothird);
-        }
     }
 
     @Override

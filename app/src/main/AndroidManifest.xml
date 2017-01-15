@@ -28,13 +28,16 @@
             android:theme="@style/AppTheme"
             />
         <activity android:name=".Game"
-                    android:screenOrientation="portrait"
+            android:screenOrientation="portrait"
             />
         <activity android:name=".Lose"
-                    android:screenOrientation="portrait"
+            android:screenOrientation="portrait"
             />
         <activity android:name=".Win"
-                android:screenOrientation="portrait"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Options"
+            android:screenOrientation="portrait"
             />
     </application>
 

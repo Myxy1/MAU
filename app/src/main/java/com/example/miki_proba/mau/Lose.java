@@ -7,11 +7,13 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Lose extends AppCompatActivity {
 
     private Boolean exit = false;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +21,18 @@ public class Lose extends AppCompatActivity {
         setContentView(R.layout.lose);
         Log.d("LOG_lose","Start");
 
+        imageView = (ImageView) findViewById(R.id.imageView);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tothird = new Intent(Lose.this, ThirdActivity.class);
+                startActivity(tothird);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            }
+        });
     }
 
-    public void Onclick(View view){
-        Intent tothird = new Intent(Lose.this, ThirdActivity.class);
-        startActivity(tothird);
-    }
 
     @Override
     protected void onStart() {
