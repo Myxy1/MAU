@@ -33,11 +33,10 @@ public class ThirdActivity extends AppCompatActivity {
     private static final String TAG = "ThirdActivity";
     private TextView name2;
     private String name;
+    private String languages;
     private Boolean exit = false;
-    private Locale myLocale;
-    private Spinner spinner;
-    private ArrayAdapter<CharSequence> adapter;
     private View button_options;
+    private Locale myLocale;
     private Button button1, button4;
 
     @Override
@@ -52,6 +51,7 @@ public class ThirdActivity extends AppCompatActivity {
 
         SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
         name = sharedPreferences.getString("name","");
+        languages = sharedPreferences.getString("languages","");
 
 
         button1 = (Button) findViewById(R.id.button1);
@@ -85,21 +85,9 @@ public class ThirdActivity extends AppCompatActivity {
             }
         });
 
+
+        //setLocale(languages);
         Log.d("LOG_third","Create");
-    }
-
-    public void start(View view){
-
-    }
-
-    public void credits(View view){
-
-    }
-
-    public void option(View view){
-        Intent option = new Intent(ThirdActivity.this, Options.class);
-        startActivity(option);
-        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 
     public void setLocale(String lang) {
@@ -110,13 +98,16 @@ public class ThirdActivity extends AppCompatActivity {
         Configuration conf = res.getConfiguration();
         conf.locale = myLocale;
         res.updateConfiguration(conf, dm);
-        Intent refresh = new Intent(this, ThirdActivity.class);
+        /*Intent refresh = new Intent(this, ThirdActivity.class);
         startActivity(refresh);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        */
     }
 
 
-    @Override
+
+
+        @Override
     public void onBackPressed() {
         if (exit) {
 
