@@ -45,6 +45,7 @@ public class Game extends AppCompatActivity {
 
 
     private String questions[];
+    private String quest[] = {"","","","","","","","","",""};
     private String ans[];
     private String opt[];
 
@@ -59,8 +60,11 @@ public class Game extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-
+        Random r = new Random(10);
         questions = getResources().getStringArray(R.array.questions);
+        for (int i = 0; i < quest.length; i++) {
+            quest[i] = questions[r.nextInt(10)];
+        }
         ans = getResources().getStringArray(R.array.ans);
         opt = getResources().getStringArray(R.array.opt);
 
@@ -83,12 +87,12 @@ public class Game extends AppCompatActivity {
 
         kategoria = (ImageView) findViewById(R.id.kategoria);
 
-        tv.setText(questions[flag]);
+        tv.setText(quest[flag]);
         rb1.setText(opt[0]);
         rb2.setText(opt[1]);
         rb3.setText(opt[2]);
         rb4.setText(opt[3]);
-        question.setText("(" + kerdesek + "/" + questions.length + ")");
+        question.setText("(" + kerdesek + "/" + quest.length + ")");
 
         btnExit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,15 +164,15 @@ public class Game extends AppCompatActivity {
                             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                             break;
                     }
-                    if (flag<questions.length)
+                    if (flag<quest.length)
                     {
-                        tv.setText(questions[flag]);
+                        tv.setText(quest[flag]);
                         rg.clearCheck();
                         rb1.setText(opt[flag*4]);
                         rb2.setText(opt[(flag*4)+1]);
                         rb3.setText(opt[(flag*4)+2]);
                         rb4.setText(opt[(flag*4)+3]);
-                        question.setText("(" + kerdesek + "/" + questions.length + ")");
+                        question.setText("(" + kerdesek + "/" + quest.length + ")");
                     }
                     else
                     {

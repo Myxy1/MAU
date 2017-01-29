@@ -44,13 +44,13 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.third_activity);
 
-
+        SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
+        name = sharedPreferences.getString("name","");
         name2 = (TextView) findViewById(R.id.name2);
         name2.setText(name);
 
 
-        SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-        name = sharedPreferences.getString("name","");
+
         languages = sharedPreferences.getString("languages","");
 
 

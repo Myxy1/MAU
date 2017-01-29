@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MAU</string>
 
-    <string-array name="questions" formatted="false">     //kérdések
+    <string-array name="questions" formatted="false">//kérdések
         <item>Knowing that in Italy the fixed telephone numbers have 10 digits whose the first is 0, how many numbers can we have?</item>
         <item>The distance between two numbers in the Fibonacci sequence is 2 places. What is the quotient of the two numbers?</item>
         <item>The perimeter proportion of two homothetic polygons equals 5. How many times is the area of the first polygon greater than the area of the second polygon?</item>
@@ -30,61 +30,136 @@
     </string-array>
 
 
-    <string-array name="opt" formatted="false">       //lehetőségek
+    <string-array name="opt" formatted="false">//lehetőségek
 
-        <item>10,000</item><item>1,000,000,000</item><item>999,999,999</item><item>100,000</item>
+        <item>10,000</item>
+        <item>1,000,000,000</item>
+        <item>999,999,999</item>
+        <item>100,000</item>
 
-        <item>2,618</item><item>1,618</item><item>0,618</item><item>3,618</item>
+        <item>2,618</item>
+        <item>1,618</item>
+        <item>0,618</item>
+        <item>3,618</item>
 
-        <item>25</item><item>5</item><item>10</item><item>2,5</item>
+        <item>25</item>
+        <item>5</item>
+        <item>10</item>
+        <item>2,5</item>
 
-        <item>55</item><item>77</item><item>88</item><item>89</item>
+        <item>55</item>
+        <item>77</item>
+        <item>88</item>
+        <item>89</item>
 
-        <item>1000 kg</item><item>2000 kg</item><item>1500 kg</item><item>500 kg</item>
+        <item>1000 kg</item>
+        <item>2000 kg</item>
+        <item>1500 kg</item>
+        <item>500 kg</item>
 
-        <item>29, 34, 88</item><item>34, 55, 89</item><item>13, 8, 5</item><item>1, 1, 2</item>
+        <item>29, 34, 88</item>
+        <item>34, 55, 89</item>
+        <item>13, 8, 5</item>
+        <item>1, 1, 2</item>
 
-        <item>1, 1, 2, 3, 5, 8, 13, 21</item><item>2, 2, 4, 6, 8, 10, 16, 26</item><item>3, 5, 7, 9,  11, 13, 15</item><item>13, 17, 19, 23, 29, 31</item>
+        <item>1, 1, 2, 3, 5, 8, 13, 21</item>
+        <item>2, 2, 4, 6, 8, 10, 16, 26</item>
+        <item>3, 5, 7, 9,  11, 13, 15</item>
+        <item>13, 17, 19, 23, 29, 31</item>
 
-        <item>0</item><item>1</item><item>2</item><item>3</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
 
-        <item>Watt</item><item>kW</item><item>kWh</item><item>Volt</item>
+        <item>Watt</item>
+        <item>kW</item>
+        <item>kWh</item>
+        <item>Volt</item>
 
-        <item>Hertz (Hz)</item><item>J</item><item>m/s</item><item>Kelvin</item>
+        <item>Hertz (Hz)</item>
+        <item>J</item>
+        <item>m/s</item>
+        <item>Kelvin</item>
 
-        <item>12 hours</item><item>1 month</item><item>24 hours</item><item>1 year</item>
+        <item>12 hours</item>
+        <item>1 month</item>
+        <item>24 hours</item>
+        <item>1 year</item>
 
-        <item>Wireless communication protocol</item><item>The computer screen</item><item>The screen resolution</item><item>Colours</item>
+        <item>Wireless communication protocol</item>
+        <item>The computer screen</item>
+        <item>The screen resolution</item>
+        <item>Colours</item>
 
-        <item>a 2 Byte number</item><item>a 12 bit number</item><item>10 (in decimal notation)</item><item>F (in hexidecimal notation)</item>
+        <item>a 2 Byte number</item>
+        <item>a 12 bit number</item>
+        <item>10 (in decimal notation)</item>
+        <item>F (in hexidecimal notation)</item>
 
-        <item>Babylonians</item><item>Indians</item><item>Egyptians</item><item>Pythagoreans</item>
+        <item>Babylonians</item>
+        <item>Indians</item>
+        <item>Egyptians</item>
+        <item>Pythagoreans</item>
 
-        <item>Acceleration</item><item>slope</item><item>the Theory of relativity</item><item>complex numbers</item>
+        <item>Acceleration</item>
+        <item>slope</item>
+        <item>the Theory of relativity</item>
+        <item>complex numbers</item>
 
-        <item>10</item><item>1024</item><item>8</item><item>2</item>
+        <item>10</item>
+        <item>1024</item>
+        <item>8</item>
+        <item>2</item>
 
-        <item>72° and 36°</item><item>70 ° and 72°</item><item>72° and 72°</item><item>36° and 71°</item>
+        <item>72° and 36°</item>
+        <item>70 ° and 72°</item>
+        <item>72° and 72°</item>
+        <item>36° and 71°</item>
 
-        <item>(a+b)/a</item><item>(a+b)</item><item>(a+b)/a+a</item><item>(a+b)/a = a/b</item>
+        <item>(a+b)/a</item>
+        <item>(a+b)</item>
+        <item>(a+b)/a+a</item>
+        <item>(a+b)/a = a/b</item>
 
-        <item>smaller than 2°C</item><item>1.5°C</item><item>bigger than 2°C</item><item>3°C</item>
+        <item>smaller than 2°C</item>
+        <item>1.5°C</item>
+        <item>bigger than 2°C</item>
+        <item>3°C</item>
 
-        <item>50$</item><item>100$</item><item>Free</item><item>300$</item>
+        <item>50$</item>
+        <item>100$</item>
+        <item>Free</item>
+        <item>300$</item>
 
-        <item>cheese</item><item>poultry meat</item><item>pork meat</item><item>potato</item>
+        <item>cheese</item>
+        <item>poultry meat</item>
+        <item>pork meat</item>
+        <item>potato</item>
 
-        <item>15</item><item>377</item><item>610</item><item>233</item>
+        <item>15</item>
+        <item>377</item>
+        <item>610</item>
+        <item>233</item>
 
-        <item>9</item><item>63</item><item>2584</item><item>987</item>
+        <item>9</item>
+        <item>63</item>
+        <item>2584</item>
+        <item>987</item>
 
-        <item>hexadecimal </item><item>decimal</item><item>numeral</item><item>3-base</item>
+        <item>hexadecimal </item>
+        <item>decimal</item>
+        <item>numeral</item>
+        <item>3-base</item>
 
-        <item>red,green,brown</item><item>red,gray,blue</item><item>green,red,blue</item><item>blue,red,yellow</item>
+        <item>red,green,brown</item>
+        <item>red,gray,blue</item>
+        <item>green,red,blue</item>
+        <item>blue,red,yellow</item>
     </string-array>
 
 
-    <string-array name="ans" formatted="false">       //jó válaszok
+    <string-array name="ans" formatted="false">//jó válaszok
         <item>1,000,000,000</item>
         <item>2,618</item>
         <item>25</item>
